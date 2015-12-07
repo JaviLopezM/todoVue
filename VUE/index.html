@@ -21,7 +21,7 @@
 
             <div v-show="remaining.length">
 
-                <h1>Tasks({{remaining.length}})</h1>
+                <h1>Tasques({{remaining.length}})</h1>
 
 
                 <ol class="list-group">
@@ -51,17 +51,17 @@
                     <input v-model="newTask"
                            v-el="newTask"
                            class="form-control"
-                           placeholder="I need to...">
+                           placeholder="Necessito...">
                 </div>
 
-                    <button class="btn btn-primary">Add Task</button>
+                    <button class="btn btn-primary">Afegeix tasca</button>
 
-                    <button v-on="click: completeAll" class="btn btn-default">Mark all as completed</button>
+                    <button v-on="click: completeAll" class="btn btn-default">Marqueu-les com a finalitzades</button>
             </form>
 
             <div v-if="completions.length">
 
-                <h2>Completed({{completions.length}})</h2>
+                <h2>Completades({{completions.length}})</h2>
 
                 <ol class="list-group">
 
@@ -76,7 +76,7 @@
 
                 </ol>
 
-                <button v-on="click: clearCompleted" class="btn btn-danger">Clear Completed</button>
+                <button v-on="click: clearCompleted" class="btn btn-danger">Netejar finalitzades</button>
 
             </div>
 
